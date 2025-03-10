@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.78.0"
+    "react-native": "0.78.0",
+    "react-native-audio-record": "^0.2.2",
+    "react-native-ble-manager": "^12.1.4",
+    "react-native-ble-plx": "^3.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

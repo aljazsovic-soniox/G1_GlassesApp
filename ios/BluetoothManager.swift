@@ -7,6 +7,9 @@
 
 import CoreBluetooth
 import Flutter
+import Foundation
+import React
+
 
 class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     static let shared = BluetoothManager(channel: FlutterMethodChannel())
@@ -345,4 +348,27 @@ extension Array {
     subscript(safe index: Int) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
+}
+
+@objc(BluetoothManager)
+class BluetoothManagerBridge: NSObject {
+  @objc static func requiresMainQueueSetup() -> Bool { return true }
+  
+  @objc func startScan(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    BluetoothManager.shared.startScan(result: resolve)
+  }
+  
+  @objc func connectToDevice(_ deviceName: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    BluetoothManager.shared.connectToDevice(deviceName: deviceName, result: resolve)
+  }
+  
+  @objc func disconnectFromGlasses(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    BluetoothManager.shared.disconnectFromGlasses(result: resolve)
+  }
+  
+  @objc func sendData(_ data: String, lr: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    let flutterData = FlutterStandardTypedData(bytes: Data(data.utf8))
+    BluetoothManager.shared.sendData(params: ["data": flutterData, "lr": lr])
+    resolve(nil)
+  }
 }

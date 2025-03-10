@@ -5,6 +5,16 @@
 - https://medium.com/ssense-tech/how-to-cook-a-react-native-bridge-with-swift-part-2-ed53b4c8b001
 
 
+# Without bridging:
+We can use the following libraries to use native features without bridging:
+- https://github.com/dotintent/react-native-ble-plx (Bluetooth - low energy)
+
+This is a lot more complicated than using bridging, but it is possible to use native features without bridging.
+
+
+
+# React Native
+
 
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
