@@ -1,3 +1,12 @@
+# Useful links for Bridging Native iOS Code with React Native Using Swift:
+- https://dev.to/amitkumar13/bridging-native-ios-code-with-react-native-using-swift-a-step-by-step-guide-b05
+- https://dev.to/ajmal_hasan/android-native-bridging-in-react-native-364m
+- https://medium.com/ssense-tech/how-to-cook-a-react-native-bridge-with-swift-part-1-16f28ab902f7
+- https://medium.com/ssense-tech/how-to-cook-a-react-native-bridge-with-swift-part-2-ed53b4c8b001
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
