@@ -1,3 +1,42 @@
+# Even G1 Glasses Integration with Soniox App
+
+This project integrates Even G1 glasses into the Soniox app using React Native.
+
+---
+
+## **TODO Items**
+
+### **Priority Tasks**
+1. **Test with macOS and iPhone**:
+   - Verify Bluetooth functionality (scanning, connecting, sending/receiving data).
+   - Debug and fix any issues that arise during testing.
+
+2. **Process Audio Data (Speech-to-Text - STT)**:
+   - Integrate a Soniox API.
+
+3. **Send Text Result to Glasses**:
+   - Implement logic to send the processed text data back to the glasses.
+
+4. **Display Text on Glasses**:
+   - Ensure the glasses can receive and display the text data correctly.
+
+---
+
+### **Additional Tasks**
+5. **Device Pairing and Connection Management**:
+   - Improve the device selection UI - dropdown or list of paired/available devices.
+   - Add a connection status indicator (e.g., connected, disconnected).
+
+---
+
+## **Testing Requirements**
+- **macOS with Xcode**: Required for building and debugging the iOS app.
+- **Simulator**: Needed for testing the app on iOS devices.
+- **iPhone**: Required for testing the app with the Even G1 glasses.
+
+---
+
+
 # Useful links for Bridging Native iOS Code with React Native Using Swift:
 - https://dev.to/amitkumar13/bridging-native-ios-code-with-react-native-using-swift-a-step-by-step-guide-b05
 - https://dev.to/ajmal_hasan/android-native-bridging-in-react-native-364m
@@ -12,6 +51,7 @@ We can use the following libraries to use native features without bridging:
 This is a lot more complicated than using bridging, but it is possible to use native features without bridging.
 
 
+---
 
 # React Native
 
